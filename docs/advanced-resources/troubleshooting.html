@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-advanced-resources/troubleshooting" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Troubleshooting and Problem-Solving | Physical AI &amp; Humanoid Robotics: From Intelligent Embodiment to Real-World Systems</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://sitarasheikh.github.io/hackathon-book/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://sitarasheikh.github.io/hackathon-book/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://sitarasheikh.github.io/hackathon-book/docs/advanced-resources/troubleshooting"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Troubleshooting and Problem-Solving | Physical AI &amp; Humanoid Robotics: From Intelligent Embodiment to Real-World Systems"><meta data-rh="true" name="description" content="This section provides strategies for identifying, diagnosing, and resolving common issues that arise during Physical AI and robotics projects. Effective troubleshooting skills are essential for developing reliable intelligent embodied systems."><meta data-rh="true" property="og:description" content="This section provides strategies for identifying, diagnosing, and resolving common issues that arise during Physical AI and robotics projects. Effective troubleshooting skills are essential for developing reliable intelligent embodied systems."><link data-rh="true" rel="icon" href="/hackathon-book/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://sitarasheikh.github.io/hackathon-book/docs/advanced-resources/troubleshooting"><link data-rh="true" rel="alternate" href="https://sitarasheikh.github.io/hackathon-book/docs/advanced-resources/troubleshooting" hreflang="en"><link data-rh="true" rel="alternate" href="https://sitarasheikh.github.io/hackathon-book/docs/advanced-resources/troubleshooting" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/hackathon-book/blog/rss.xml" title="Physical AI &amp; Humanoid Robotics: From Intelligent Embodiment to Real-World Systems RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/hackathon-book/blog/atom.xml" title="Physical AI &amp; Humanoid Robotics: From Intelligent Embodiment to Real-World Systems Atom Feed"><link rel="stylesheet" href="/hackathon-book/assets/css/styles.d063755d.css">
+<script src="/hackathon-book/assets/js/runtime~main.04eef977.js" defer="defer"></script>
+<script src="/hackathon-book/assets/js/main.f0faa8e9.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/hackathon-book/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/hackathon-book/"><div class="navbar__logo"><img src="/hackathon-book/img/logo.svg" alt="Physical AI &amp; Humanoid Robotics Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/hackathon-book/img/logo.svg" alt="Physical AI &amp; Humanoid Robotics Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Physical AI &amp; Humanoid Robotics</b></a><a class="navbar__item navbar__link" href="/hackathon-book/docs/intro">Guide</a><a class="navbar__item navbar__link" href="/hackathon-book/blog">Blog</a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Chat</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/hackathon-book/chat">🤖 Chat with Help Center</a></li><li><a class="dropdown__link" href="/hackathon-book/upload">📤 Upload Documents</a></li></ul></div></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/sitarasheikh/hackathon-book" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Troubleshooting and Problem-Solving</h1></header>
+<p>This section provides strategies for identifying, diagnosing, and resolving common issues that arise during Physical AI and robotics projects. Effective troubleshooting skills are essential for developing reliable intelligent embodied systems.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="general-troubleshooting-approach">General Troubleshooting Approach<a href="#general-troubleshooting-approach" class="hash-link" aria-label="Direct link to General Troubleshooting Approach" title="Direct link to General Troubleshooting Approach" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-scientific-method">The Scientific Method<a href="#the-scientific-method" class="hash-link" aria-label="Direct link to The Scientific Method" title="Direct link to The Scientific Method" translate="no">​</a></h3>
+<ol>
+<li class=""><strong>Observe</strong>: Clearly identify the symptoms of the problem</li>
+<li class=""><strong>Hypothesize</strong>: Formulate possible causes based on observations</li>
+<li class=""><strong>Test</strong>: Design experiments to validate or invalidate each hypothesis</li>
+<li class=""><strong>Analyze</strong>: Examine the results and refine your understanding</li>
+<li class=""><strong>Repeat</strong>: Continue until the root cause is identified</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-isolation">Problem Isolation<a href="#problem-isolation" class="hash-link" aria-label="Direct link to Problem Isolation" title="Direct link to Problem Isolation" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Divide and conquer</strong>: Test components individually</li>
+<li class=""><strong>Minimal reproducible example</strong>: Create the simplest case that shows the problem</li>
+<li class=""><strong>Change one thing at a time</strong>: Avoid multiple simultaneous changes</li>
+<li class=""><strong>Document your process</strong>: Keep track of what you&#x27;ve tried</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-technical-issues">Common Technical Issues<a href="#common-technical-issues" class="hash-link" aria-label="Direct link to Common Technical Issues" title="Direct link to Common Technical Issues" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="software-issues">Software Issues<a href="#software-issues" class="hash-link" aria-label="Direct link to Software Issues" title="Direct link to Software Issues" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="runtime-errors">Runtime Errors<a href="#runtime-errors" class="hash-link" aria-label="Direct link to Runtime Errors" title="Direct link to Runtime Errors" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Symptoms</strong>: Application crashes, unexpected behavior</li>
+<li class=""><strong>Diagnosis</strong>: Check error messages, stack traces, logs</li>
+<li class=""><strong>Solutions</strong>: Add error handling, validate inputs, debug step-by-step</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="performance-problems">Performance Problems<a href="#performance-problems" class="hash-link" aria-label="Direct link to Performance Problems" title="Direct link to Performance Problems" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Symptoms</strong>: Slow execution, high memory usage, UI freezes</li>
+<li class=""><strong>Diagnosis</strong>: Profile code, monitor resource usage, identify bottlenecks</li>
+<li class=""><strong>Solutions</strong>: Optimize algorithms, implement caching, reduce complexity</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="integration-issues">Integration Issues<a href="#integration-issues" class="hash-link" aria-label="Direct link to Integration Issues" title="Direct link to Integration Issues" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Symptoms</strong>: Components don&#x27;t work together, data corruption</li>
+<li class=""><strong>Diagnosis</strong>: Check data formats, API compatibility, timing issues</li>
+<li class=""><strong>Solutions</strong>: Implement proper data validation, add logging, fix interfaces</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="hardware-issues">Hardware Issues<a href="#hardware-issues" class="hash-link" aria-label="Direct link to Hardware Issues" title="Direct link to Hardware Issues" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="sensor-problems">Sensor Problems<a href="#sensor-problems" class="hash-link" aria-label="Direct link to Sensor Problems" title="Direct link to Sensor Problems" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Symptoms</strong>: Inaccurate readings, no data, erratic behavior</li>
+<li class=""><strong>Diagnosis</strong>: Check connections, power supply, calibration, interference</li>
+<li class=""><strong>Solutions</strong>: Verify wiring, recalibrate, add filtering, change location</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="communication-failures">Communication Failures<a href="#communication-failures" class="hash-link" aria-label="Direct link to Communication Failures" title="Direct link to Communication Failures" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Symptoms</strong>: Devices not responding, data loss, connection drops</li>
+<li class=""><strong>Diagnosis</strong>: Check baud rates, pin assignments, protocol implementation</li>
+<li class=""><strong>Solutions</strong>: Verify connections, implement retry logic, check timing</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="power-issues">Power Issues<a href="#power-issues" class="hash-link" aria-label="Direct link to Power Issues" title="Direct link to Power Issues" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Symptoms</strong>: Intermittent operation, brownouts, overheating</li>
+<li class=""><strong>Diagnosis</strong>: Measure voltage levels, current consumption, heat generation</li>
+<li class=""><strong>Solutions</strong>: Improve power supply, add regulation, reduce consumption</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="debugging-strategies">Debugging Strategies<a href="#debugging-strategies" class="hash-link" aria-label="Direct link to Debugging Strategies" title="Direct link to Debugging Strategies" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="print-statement-debugging">Print Statement Debugging<a href="#print-statement-debugging" class="hash-link" aria-label="Direct link to Print Statement Debugging" title="Direct link to Print Statement Debugging" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>When to use</strong>: Quick debugging, embedded systems, production environments</li>
+<li class=""><strong>Best practices</strong>: Use descriptive messages, include context information</li>
+<li class=""><strong>Limitations</strong>: Can slow down real-time systems, clutter output</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="interactive-debugging">Interactive Debugging<a href="#interactive-debugging" class="hash-link" aria-label="Direct link to Interactive Debugging" title="Direct link to Interactive Debugging" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>When to use</strong>: Development phase, complex logic debugging</li>
+<li class=""><strong>Tools</strong>: IDE debuggers, GDB, browser dev tools</li>
+<li class=""><strong>Limitations</strong>: May not work in all environments, can change timing</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="logging">Logging<a href="#logging" class="hash-link" aria-label="Direct link to Logging" title="Direct link to Logging" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Implementation</strong>: Structured logs with timestamps and levels</li>
+<li class=""><strong>Best practices</strong>: Log important state changes, errors, and user actions</li>
+<li class=""><strong>Analysis</strong>: Use log analysis tools to identify patterns</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="simulation-and-testing">Simulation and Testing<a href="#simulation-and-testing" class="hash-link" aria-label="Direct link to Simulation and Testing" title="Direct link to Simulation and Testing" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Unit tests</strong>: Verify individual components</li>
+<li class=""><strong>Mock objects</strong>: Simulate external dependencies</li>
+<li class=""><strong>Simulation environments</strong>: Test without hardware dependencies</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="hardware-specific-troubleshooting">Hardware-Specific Troubleshooting<a href="#hardware-specific-troubleshooting" class="hash-link" aria-label="Direct link to Hardware-Specific Troubleshooting" title="Direct link to Hardware-Specific Troubleshooting" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="microcontroller-issues">Microcontroller Issues<a href="#microcontroller-issues" class="hash-link" aria-label="Direct link to Microcontroller Issues" title="Direct link to Microcontroller Issues" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Connection problems</strong>: Check serial connections, drivers, port selection</li>
+<li class=""><strong>Programming failures</strong>: Verify board selection, bootloader issues</li>
+<li class=""><strong>Timing issues</strong>: Check clock speeds, interrupt handling</li>
+<li class=""><strong>Memory problems</strong>: Monitor stack/heap usage, avoid memory leaks</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sensor-calibration">Sensor Calibration<a href="#sensor-calibration" class="hash-link" aria-label="Direct link to Sensor Calibration" title="Direct link to Sensor Calibration" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Offset errors</strong>: Implement zero-point calibration</li>
+<li class=""><strong>Scale errors</strong>: Use known reference values for calibration</li>
+<li class=""><strong>Temperature effects</strong>: Implement temperature compensation</li>
+<li class=""><strong>Drift over time</strong>: Plan for periodic recalibration</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="actuator-control">Actuator Control<a href="#actuator-control" class="hash-link" aria-label="Direct link to Actuator Control" title="Direct link to Actuator Control" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Inconsistent movement</strong>: Check power supply, mechanical binding</li>
+<li class=""><strong>Precision issues</strong>: Implement feedback control, reduce backlash</li>
+<li class=""><strong>Safety limits</strong>: Implement software and hardware limits</li>
+<li class=""><strong>Timing coordination</strong>: Synchronize multiple actuators</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="software-specific-troubleshooting">Software-Specific Troubleshooting<a href="#software-specific-troubleshooting" class="hash-link" aria-label="Direct link to Software-Specific Troubleshooting" title="Direct link to Software-Specific Troubleshooting" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="web-development-issues">Web Development Issues<a href="#web-development-issues" class="hash-link" aria-label="Direct link to Web Development Issues" title="Direct link to Web Development Issues" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Browser compatibility</strong>: Test across different browsers and versions</li>
+<li class=""><strong>API failures</strong>: Implement retry logic, handle different error types</li>
+<li class=""><strong>State management</strong>: Debug data flow, implement state logging</li>
+<li class=""><strong>Performance</strong>: Profile rendering, optimize queries, implement caching</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="mobile-development">Mobile Development<a href="#mobile-development" class="hash-link" aria-label="Direct link to Mobile Development" title="Direct link to Mobile Development" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Platform differences</strong>: Test on multiple devices and OS versions</li>
+<li class=""><strong>Resource constraints</strong>: Monitor memory and battery usage</li>
+<li class=""><strong>Network conditions</strong>: Handle offline scenarios, implement retry logic</li>
+<li class=""><strong>UI responsiveness</strong>: Optimize rendering, move heavy operations off main thread</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="database-issues">Database Issues<a href="#database-issues" class="hash-link" aria-label="Direct link to Database Issues" title="Direct link to Database Issues" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Slow queries</strong>: Analyze query plans, add indexes, optimize queries</li>
+<li class=""><strong>Connection problems</strong>: Implement connection pooling, handle timeouts</li>
+<li class=""><strong>Data consistency</strong>: Use transactions, implement validation</li>
+<li class=""><strong>Schema changes</strong>: Plan for migrations, maintain backward compatibility</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="network-and-api-troubleshooting">Network and API Troubleshooting<a href="#network-and-api-troubleshooting" class="hash-link" aria-label="Direct link to Network and API Troubleshooting" title="Direct link to Network and API Troubleshooting" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="connectivity-issues">Connectivity Issues<a href="#connectivity-issues" class="hash-link" aria-label="Direct link to Connectivity Issues" title="Direct link to Connectivity Issues" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Network configuration</strong>: Check firewalls, proxy settings, DNS</li>
+<li class=""><strong>Timeouts</strong>: Adjust timeout values, implement retry logic</li>
+<li class=""><strong>Rate limiting</strong>: Implement proper rate limiting, exponential backoff</li>
+<li class=""><strong>Authentication</strong>: Verify credentials, token expiration, permissions</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-integration">API Integration<a href="#api-integration" class="hash-link" aria-label="Direct link to API Integration" title="Direct link to API Integration" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Response format</strong>: Validate API responses, handle different versions</li>
+<li class=""><strong>Error handling</strong>: Implement comprehensive error handling</li>
+<li class=""><strong>Data validation</strong>: Validate incoming and outgoing data</li>
+<li class=""><strong>Documentation</strong>: Keep API documentation updated</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="real-time-system-troubleshooting">Real-Time System Troubleshooting<a href="#real-time-system-troubleshooting" class="hash-link" aria-label="Direct link to Real-Time System Troubleshooting" title="Direct link to Real-Time System Troubleshooting" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="timing-issues">Timing Issues<a href="#timing-issues" class="hash-link" aria-label="Direct link to Timing Issues" title="Direct link to Timing Issues" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Deadline misses</strong>: Analyze task priorities, optimize execution time</li>
+<li class=""><strong>Race conditions</strong>: Implement proper synchronization</li>
+<li class=""><strong>Interrupt handling</strong>: Check interrupt priorities, timing</li>
+<li class=""><strong>Buffer overflows</strong>: Monitor buffer usage, implement flow control</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resource-management">Resource Management<a href="#resource-management" class="hash-link" aria-label="Direct link to Resource Management" title="Direct link to Resource Management" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Memory leaks</strong>: Monitor memory usage, implement proper cleanup</li>
+<li class=""><strong>CPU saturation</strong>: Profile usage, optimize algorithms</li>
+<li class=""><strong>I/O bottlenecks</strong>: Optimize data access patterns</li>
+<li class=""><strong>Power consumption</strong>: Monitor usage, optimize for efficiency</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="system-reliability-and-recovery">System Reliability and Recovery<a href="#system-reliability-and-recovery" class="hash-link" aria-label="Direct link to System Reliability and Recovery" title="Direct link to System Reliability and Recovery" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="error-handling-strategies">Error Handling Strategies<a href="#error-handling-strategies" class="hash-link" aria-label="Direct link to Error Handling Strategies" title="Direct link to Error Handling Strategies" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Graceful degradation</strong>: Design systems to maintain core functionality during partial failures</li>
+<li class=""><strong>Feature prioritization</strong>: Focus on essential capabilities when resources are limited</li>
+<li class=""><strong>Fallback mechanisms</strong>: Implement robust alternatives for critical functions</li>
+<li class=""><strong>Recovery procedures</strong>: Design systematic approaches to restore normal operation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="safety-and-operational-procedures">Safety and Operational Procedures<a href="#safety-and-operational-procedures" class="hash-link" aria-label="Direct link to Safety and Operational Procedures" title="Direct link to Safety and Operational Procedures" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Safe modes</strong>: Implement operational states that prioritize safety during anomalies</li>
+<li class=""><strong>Data integrity</strong>: Maintain system state consistency during error conditions</li>
+<li class=""><strong>Manual controls</strong>: Provide human override capabilities for critical functions</li>
+<li class=""><strong>Error recovery</strong>: Implement comprehensive failure detection and recovery systems</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="preventive-measures">Preventive Measures<a href="#preventive-measures" class="hash-link" aria-label="Direct link to Preventive Measures" title="Direct link to Preventive Measures" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="code-quality">Code Quality<a href="#code-quality" class="hash-link" aria-label="Direct link to Code Quality" title="Direct link to Code Quality" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Defensive programming</strong>: Validate inputs, handle errors gracefully</li>
+<li class=""><strong>Code reviews</strong>: Have team members review each other&#x27;s code</li>
+<li class=""><strong>Testing</strong>: Implement automated tests where possible</li>
+<li class=""><strong>Documentation</strong>: Comment complex logic, document interfaces</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="system-design">System Design<a href="#system-design" class="hash-link" aria-label="Direct link to System Design" title="Direct link to System Design" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Modularity</strong>: Design components to be testable independently</li>
+<li class=""><strong>Error handling</strong>: Plan for failure modes during design</li>
+<li class=""><strong>Monitoring</strong>: Implement logging and monitoring from the start</li>
+<li class=""><strong>Configuration</strong>: Make systems configurable rather than hardcoded</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="learning-from-failures">Learning from Failures<a href="#learning-from-failures" class="hash-link" aria-label="Direct link to Learning from Failures" title="Direct link to Learning from Failures" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="post-mortem-analysis">Post-Mortem Analysis<a href="#post-mortem-analysis" class="hash-link" aria-label="Direct link to Post-Mortem Analysis" title="Direct link to Post-Mortem Analysis" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Document what went wrong</strong>: Keep detailed notes of issues encountered</li>
+<li class=""><strong>Identify root causes</strong>: Go beyond symptoms to understand causes</li>
+<li class=""><strong>Develop solutions</strong>: Create strategies to prevent similar issues</li>
+<li class=""><strong>Share knowledge</strong>: Communicate learnings with team and community</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="building-resilience">Building Resilience<a href="#building-resilience" class="hash-link" aria-label="Direct link to Building Resilience" title="Direct link to Building Resilience" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Expect failures</strong>: Plan for common failure modes</li>
+<li class=""><strong>Build redundancy</strong>: Implement backup approaches</li>
+<li class=""><strong>Test failure scenarios</strong>: Verify error handling works</li>
+<li class=""><strong>Continuous improvement</strong>: Refine approaches based on experience</li>
+</ul>
+<p>Remember that troubleshooting is a skill that improves with practice. Stay calm, be systematic, and don&#x27;t hesitate to seek help from mentors, teammates, or online resources when needed.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/sitarasheikh/hackathon-book/edit/main/docs/advanced-resources/troubleshooting.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#general-troubleshooting-approach" class="table-of-contents__link toc-highlight">General Troubleshooting Approach</a><ul><li><a href="#the-scientific-method" class="table-of-contents__link toc-highlight">The Scientific Method</a></li><li><a href="#problem-isolation" class="table-of-contents__link toc-highlight">Problem Isolation</a></li></ul></li><li><a href="#common-technical-issues" class="table-of-contents__link toc-highlight">Common Technical Issues</a><ul><li><a href="#software-issues" class="table-of-contents__link toc-highlight">Software Issues</a></li><li><a href="#hardware-issues" class="table-of-contents__link toc-highlight">Hardware Issues</a></li></ul></li><li><a href="#debugging-strategies" class="table-of-contents__link toc-highlight">Debugging Strategies</a><ul><li><a href="#print-statement-debugging" class="table-of-contents__link toc-highlight">Print Statement Debugging</a></li><li><a href="#interactive-debugging" class="table-of-contents__link toc-highlight">Interactive Debugging</a></li><li><a href="#logging" class="table-of-contents__link toc-highlight">Logging</a></li><li><a href="#simulation-and-testing" class="table-of-contents__link toc-highlight">Simulation and Testing</a></li></ul></li><li><a href="#hardware-specific-troubleshooting" class="table-of-contents__link toc-highlight">Hardware-Specific Troubleshooting</a><ul><li><a href="#microcontroller-issues" class="table-of-contents__link toc-highlight">Microcontroller Issues</a></li><li><a href="#sensor-calibration" class="table-of-contents__link toc-highlight">Sensor Calibration</a></li><li><a href="#actuator-control" class="table-of-contents__link toc-highlight">Actuator Control</a></li></ul></li><li><a href="#software-specific-troubleshooting" class="table-of-contents__link toc-highlight">Software-Specific Troubleshooting</a><ul><li><a href="#web-development-issues" class="table-of-contents__link toc-highlight">Web Development Issues</a></li><li><a href="#mobile-development" class="table-of-contents__link toc-highlight">Mobile Development</a></li><li><a href="#database-issues" class="table-of-contents__link toc-highlight">Database Issues</a></li></ul></li><li><a href="#network-and-api-troubleshooting" class="table-of-contents__link toc-highlight">Network and API Troubleshooting</a><ul><li><a href="#connectivity-issues" class="table-of-contents__link toc-highlight">Connectivity Issues</a></li><li><a href="#api-integration" class="table-of-contents__link toc-highlight">API Integration</a></li></ul></li><li><a href="#real-time-system-troubleshooting" class="table-of-contents__link toc-highlight">Real-Time System Troubleshooting</a><ul><li><a href="#timing-issues" class="table-of-contents__link toc-highlight">Timing Issues</a></li><li><a href="#resource-management" class="table-of-contents__link toc-highlight">Resource Management</a></li></ul></li><li><a href="#system-reliability-and-recovery" class="table-of-contents__link toc-highlight">System Reliability and Recovery</a><ul><li><a href="#error-handling-strategies" class="table-of-contents__link toc-highlight">Error Handling Strategies</a></li><li><a href="#safety-and-operational-procedures" class="table-of-contents__link toc-highlight">Safety and Operational Procedures</a></li></ul></li><li><a href="#preventive-measures" class="table-of-contents__link toc-highlight">Preventive Measures</a><ul><li><a href="#code-quality" class="table-of-contents__link toc-highlight">Code Quality</a></li><li><a href="#system-design" class="table-of-contents__link toc-highlight">System Design</a></li></ul></li><li><a href="#learning-from-failures" class="table-of-contents__link toc-highlight">Learning from Failures</a><ul><li><a href="#post-mortem-analysis" class="table-of-contents__link toc-highlight">Post-Mortem Analysis</a></li><li><a href="#building-resilience" class="table-of-contents__link toc-highlight">Building Resilience</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/hackathon-book/docs/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/hackathon-book/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Physical AI & Humanoid Robotics. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

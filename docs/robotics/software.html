@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-robotics/software" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Robotics Software Development | Physical AI &amp; Humanoid Robotics: From Intelligent Embodiment to Real-World Systems</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://sitarasheikh.github.io/hackathon-book/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://sitarasheikh.github.io/hackathon-book/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://sitarasheikh.github.io/hackathon-book/docs/robotics/software"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Robotics Software Development | Physical AI &amp; Humanoid Robotics: From Intelligent Embodiment to Real-World Systems"><meta data-rh="true" name="description" content="Software development for robotics involves unique challenges including real-time constraints, sensor fusion, and control algorithms. This section covers essential software concepts and tools for robotics projects."><meta data-rh="true" property="og:description" content="Software development for robotics involves unique challenges including real-time constraints, sensor fusion, and control algorithms. This section covers essential software concepts and tools for robotics projects."><link data-rh="true" rel="icon" href="/hackathon-book/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://sitarasheikh.github.io/hackathon-book/docs/robotics/software"><link data-rh="true" rel="alternate" href="https://sitarasheikh.github.io/hackathon-book/docs/robotics/software" hreflang="en"><link data-rh="true" rel="alternate" href="https://sitarasheikh.github.io/hackathon-book/docs/robotics/software" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/hackathon-book/blog/rss.xml" title="Physical AI &amp; Humanoid Robotics: From Intelligent Embodiment to Real-World Systems RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/hackathon-book/blog/atom.xml" title="Physical AI &amp; Humanoid Robotics: From Intelligent Embodiment to Real-World Systems Atom Feed"><link rel="stylesheet" href="/hackathon-book/assets/css/styles.d063755d.css">
+<script src="/hackathon-book/assets/js/runtime~main.04eef977.js" defer="defer"></script>
+<script src="/hackathon-book/assets/js/main.f0faa8e9.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/hackathon-book/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/hackathon-book/"><div class="navbar__logo"><img src="/hackathon-book/img/logo.svg" alt="Physical AI &amp; Humanoid Robotics Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/hackathon-book/img/logo.svg" alt="Physical AI &amp; Humanoid Robotics Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Physical AI &amp; Humanoid Robotics</b></a><a class="navbar__item navbar__link" href="/hackathon-book/docs/intro">Guide</a><a class="navbar__item navbar__link" href="/hackathon-book/blog">Blog</a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Chat</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/hackathon-book/chat">🤖 Chat with Help Center</a></li><li><a class="dropdown__link" href="/hackathon-book/upload">📤 Upload Documents</a></li></ul></div></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/sitarasheikh/hackathon-book" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Robotics Software Development</h1></header>
+<p>Software development for robotics involves unique challenges including real-time constraints, sensor fusion, and control algorithms. This section covers essential software concepts and tools for robotics projects.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="robotics-software-architecture">Robotics Software Architecture<a href="#robotics-software-architecture" class="hash-link" aria-label="Direct link to Robotics Software Architecture" title="Direct link to Robotics Software Architecture" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="layered-architecture">Layered Architecture<a href="#layered-architecture" class="hash-link" aria-label="Direct link to Layered Architecture" title="Direct link to Layered Architecture" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Hardware Abstraction Layer</strong>: Device drivers and communication protocols</li>
+<li class=""><strong>Control Layer</strong>: Motor control, sensor processing, basic behaviors</li>
+<li class=""><strong>Planning Layer</strong>: Path planning, task planning, decision making</li>
+<li class=""><strong>Application Layer</strong>: High-level functionality and user interaction</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="real-time-considerations">Real-Time Considerations<a href="#real-time-considerations" class="hash-link" aria-label="Direct link to Real-Time Considerations" title="Direct link to Real-Time Considerations" translate="no">​</a></h3>
+<ul>
+<li class="">Deterministic timing requirements</li>
+<li class="">Priority-based task scheduling</li>
+<li class="">Interrupt handling and latency requirements</li>
+<li class="">Memory management and allocation strategies</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="popular-robotics-software-frameworks">Popular Robotics Software Frameworks<a href="#popular-robotics-software-frameworks" class="hash-link" aria-label="Direct link to Popular Robotics Software Frameworks" title="Direct link to Popular Robotics Software Frameworks" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="robot-operating-system-ros">Robot Operating System (ROS)<a href="#robot-operating-system-ros" class="hash-link" aria-label="Direct link to Robot Operating System (ROS)" title="Direct link to Robot Operating System (ROS)" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>ROS 1</strong>: Established ecosystem with extensive packages</li>
+<li class=""><strong>ROS 2</strong>: Modern architecture with improved reliability</li>
+<li class=""><strong>Key Concepts</strong>: Nodes, topics, services, actions, parameters</li>
+<li class=""><strong>Tools</strong>: rviz, rqt, rosbag, rosbridge</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="alternative-frameworks">Alternative Frameworks<a href="#alternative-frameworks" class="hash-link" aria-label="Direct link to Alternative Frameworks" title="Direct link to Alternative Frameworks" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>YARP</strong>: Lightweight robot platform</li>
+<li class=""><strong>MOOS</strong>: Mission Oriented Operating Suite</li>
+<li class=""><strong>OpenRAVE</strong>: Robot analysis and visualization</li>
+<li class=""><strong>CARMEN</strong>: Carnegie Mellon Robot Navigation</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="control-systems-programming">Control Systems Programming<a href="#control-systems-programming" class="hash-link" aria-label="Direct link to Control Systems Programming" title="Direct link to Control Systems Programming" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="control-theory-basics">Control Theory Basics<a href="#control-theory-basics" class="hash-link" aria-label="Direct link to Control Theory Basics" title="Direct link to Control Theory Basics" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>PID Controllers</strong>: Proportional-Integral-Derivative control</li>
+<li class=""><strong>State Machines</strong>: For behavior switching</li>
+<li class=""><strong>Feedback Control</strong>: Sensor-based control loops</li>
+<li class=""><strong>Feedforward Control</strong>: Predictive control elements</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="implementation-patterns">Implementation Patterns<a href="#implementation-patterns" class="hash-link" aria-label="Direct link to Implementation Patterns" title="Direct link to Implementation Patterns" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Rate-based loops</strong>: Maintaining consistent update rates</li>
+<li class=""><strong>Event-driven systems</strong>: Responding to sensor triggers</li>
+<li class=""><strong>Multithreading</strong>: Handling concurrent operations</li>
+<li class=""><strong>Synchronization</strong>: Coordinating between different components</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sensor-data-processing">Sensor Data Processing<a href="#sensor-data-processing" class="hash-link" aria-label="Direct link to Sensor Data Processing" title="Direct link to Sensor Data Processing" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="data-acquisition">Data Acquisition<a href="#data-acquisition" class="hash-link" aria-label="Direct link to Data Acquisition" title="Direct link to Data Acquisition" translate="no">​</a></h3>
+<ul>
+<li class="">Reading from various sensor types</li>
+<li class="">Handling different data rates and formats</li>
+<li class="">Implementing sensor calibration</li>
+<li class="">Managing sensor fusion</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="filtering-and-processing">Filtering and Processing<a href="#filtering-and-processing" class="hash-link" aria-label="Direct link to Filtering and Processing" title="Direct link to Filtering and Processing" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Kalman Filters</strong>: For state estimation</li>
+<li class=""><strong>Particle Filters</strong>: For probabilistic tracking</li>
+<li class=""><strong>Moving Averages</strong>: For noise reduction</li>
+<li class=""><strong>Custom Filters</strong>: For specific applications</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="computer-vision-in-robotics">Computer Vision in Robotics<a href="#computer-vision-in-robotics" class="hash-link" aria-label="Direct link to Computer Vision in Robotics" title="Direct link to Computer Vision in Robotics" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="image-processing">Image Processing<a href="#image-processing" class="hash-link" aria-label="Direct link to Image Processing" title="Direct link to Image Processing" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>OpenCV</strong>: Computer vision library for multiple languages</li>
+<li class=""><strong>Feature Detection</strong>: Corners, edges, blobs</li>
+<li class=""><strong>Object Detection</strong>: Identifying objects in images</li>
+<li class=""><strong>Image Enhancement</strong>: Filtering and preprocessing</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="vision-based-control">Vision-Based Control<a href="#vision-based-control" class="hash-link" aria-label="Direct link to Vision-Based Control" title="Direct link to Vision-Based Control" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Visual Servoing</strong>: Controlling robot based on visual feedback</li>
+<li class=""><strong>SLAM</strong>: Simultaneous Localization and Mapping</li>
+<li class=""><strong>Object Tracking</strong>: Following moving objects</li>
+<li class=""><strong>Gesture Recognition</strong>: Human-robot interaction</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="path-planning-and-navigation">Path Planning and Navigation<a href="#path-planning-and-navigation" class="hash-link" aria-label="Direct link to Path Planning and Navigation" title="Direct link to Path Planning and Navigation" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="global-planning">Global Planning<a href="#global-planning" class="hash-link" aria-label="Direct link to Global Planning" title="Direct link to Global Planning" translate="no">​</a></h3>
+<ul>
+<li class=""><em><em>A</em> Algorithm</em>*: Optimal path finding</li>
+<li class=""><strong>Dijkstra&#x27;s Algorithm</strong>: Shortest path calculation</li>
+<li class=""><strong>Visibility Graphs</strong>: For polygonal obstacles</li>
+<li class=""><strong>Voronoi Diagrams</strong>: For safe path generation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="local-planning">Local Planning<a href="#local-planning" class="hash-link" aria-label="Direct link to Local Planning" title="Direct link to Local Planning" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Dynamic Window Approach</strong>: Velocity-based planning</li>
+<li class=""><strong>Potential Fields</strong>: Attractive and repulsive forces</li>
+<li class=""><strong>Model Predictive Control</strong>: Optimization-based planning</li>
+<li class=""><strong>Reactive Navigation</strong>: Immediate obstacle avoidance</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="programming-languages-for-robotics">Programming Languages for Robotics<a href="#programming-languages-for-robotics" class="hash-link" aria-label="Direct link to Programming Languages for Robotics" title="Direct link to Programming Languages for Robotics" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="c">C++<a href="#c" class="hash-link" aria-label="Direct link to C++" title="Direct link to C++" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Performance</strong>: Real-time applications and control systems</li>
+<li class=""><strong>ROS Integration</strong>: Native support in ROS/ROS2</li>
+<li class=""><strong>Libraries</strong>: PCL for point cloud processing, OpenCV</li>
+<li class=""><strong>Challenges</strong>: Memory management, development time</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="python">Python<a href="#python" class="hash-link" aria-label="Direct link to Python" title="Direct link to Python" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Rapid Prototyping</strong>: Quick development and testing</li>
+<li class=""><strong>Libraries</strong>: NumPy, SciPy, scikit-learn, OpenCV</li>
+<li class=""><strong>ROS Integration</strong>: rospy and rclpy</li>
+<li class=""><strong>Challenges</strong>: Performance limitations for real-time systems</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="other-languages">Other Languages<a href="#other-languages" class="hash-link" aria-label="Direct link to Other Languages" title="Direct link to Other Languages" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>MATLAB/Simulink</strong>: Algorithm development and simulation</li>
+<li class=""><strong>Java</strong>: Android robotics and some research applications</li>
+<li class=""><strong>JavaScript</strong>: Web-based robotics and visualization</li>
+<li class=""><strong>Rust</strong>: Emerging for safety-critical applications</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="simulation-and-testing">Simulation and Testing<a href="#simulation-and-testing" class="hash-link" aria-label="Direct link to Simulation and Testing" title="Direct link to Simulation and Testing" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="simulation-environments">Simulation Environments<a href="#simulation-environments" class="hash-link" aria-label="Direct link to Simulation Environments" title="Direct link to Simulation Environments" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Gazebo</strong>: Physics-based simulation with ROS integration</li>
+<li class=""><strong>Webots</strong>: General-purpose robot simulator</li>
+<li class=""><strong>PyBullet</strong>: Physics simulation with Python API</li>
+<li class=""><strong>Stage</strong>: 2D multi-robot simulator</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="testing-strategies">Testing Strategies<a href="#testing-strategies" class="hash-link" aria-label="Direct link to Testing Strategies" title="Direct link to Testing Strategies" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Unit Testing</strong>: Individual component verification</li>
+<li class=""><strong>Integration Testing</strong>: Subsystem interaction</li>
+<li class=""><strong>Hardware-in-the-Loop</strong>: Testing with actual hardware</li>
+<li class=""><strong>Simulation Testing</strong>: Before real-world deployment</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="debugging-robotics-software">Debugging Robotics Software<a href="#debugging-robotics-software" class="hash-link" aria-label="Direct link to Debugging Robotics Software" title="Direct link to Debugging Robotics Software" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-challenges">Common Challenges<a href="#common-challenges" class="hash-link" aria-label="Direct link to Common Challenges" title="Direct link to Common Challenges" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Timing Issues</strong>: Race conditions and synchronization problems</li>
+<li class=""><strong>Sensor Noise</strong>: Handling imperfect sensor data</li>
+<li class=""><strong>Real-time Constraints</strong>: Meeting timing requirements</li>
+<li class=""><strong>Hardware Dependencies</strong>: Testing without hardware</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="debugging-tools">Debugging Tools<a href="#debugging-tools" class="hash-link" aria-label="Direct link to Debugging Tools" title="Direct link to Debugging Tools" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>ROS Tools</strong>: rqt, rosbag, rviz for visualization</li>
+<li class=""><strong>Logging</strong>: Extensive logging for post-hoc analysis</li>
+<li class=""><strong>Simulation</strong>: Testing in controlled environments</li>
+<li class=""><strong>Hardware Diagnostics</strong>: Built-in self-test capabilities</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="performance-optimization">Performance Optimization<a href="#performance-optimization" class="hash-link" aria-label="Direct link to Performance Optimization" title="Direct link to Performance Optimization" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="profiling-and-monitoring">Profiling and Monitoring<a href="#profiling-and-monitoring" class="hash-link" aria-label="Direct link to Profiling and Monitoring" title="Direct link to Profiling and Monitoring" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>CPU Profiling</strong>: Identifying computational bottlenecks</li>
+<li class=""><strong>Memory Usage</strong>: Monitoring allocation and leaks</li>
+<li class=""><strong>Network Traffic</strong>: For distributed systems</li>
+<li class=""><strong>Battery Consumption</strong>: For mobile robots</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="optimization-techniques">Optimization Techniques<a href="#optimization-techniques" class="hash-link" aria-label="Direct link to Optimization Techniques" title="Direct link to Optimization Techniques" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Algorithm Complexity</strong>: Choosing efficient algorithms</li>
+<li class=""><strong>Code Optimization</strong>: Efficient data structures and algorithms</li>
+<li class=""><strong>Parallel Processing</strong>: Utilizing multiple cores</li>
+<li class=""><strong>Caching</strong>: Storing computed results when appropriate</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="deployment-considerations">Deployment Considerations<a href="#deployment-considerations" class="hash-link" aria-label="Direct link to Deployment Considerations" title="Direct link to Deployment Considerations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="cross-compilation">Cross-Compilation<a href="#cross-compilation" class="hash-link" aria-label="Direct link to Cross-Compilation" title="Direct link to Cross-Compilation" translate="no">​</a></h3>
+<ul>
+<li class="">Compiling for target hardware architecture</li>
+<li class="">Managing dependencies and libraries</li>
+<li class="">Optimizing for resource-constrained systems</li>
+<li class="">Handling different operating systems</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="configuration-management">Configuration Management<a href="#configuration-management" class="hash-link" aria-label="Direct link to Configuration Management" title="Direct link to Configuration Management" translate="no">​</a></h3>
+<ul>
+<li class="">Parameter files for different robot configurations</li>
+<li class="">Runtime configuration updates</li>
+<li class="">Environment-specific settings</li>
+<li class="">Version control for configurations</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/sitarasheikh/hackathon-book/edit/main/docs/robotics/software.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#robotics-software-architecture" class="table-of-contents__link toc-highlight">Robotics Software Architecture</a><ul><li><a href="#layered-architecture" class="table-of-contents__link toc-highlight">Layered Architecture</a></li><li><a href="#real-time-considerations" class="table-of-contents__link toc-highlight">Real-Time Considerations</a></li></ul></li><li><a href="#popular-robotics-software-frameworks" class="table-of-contents__link toc-highlight">Popular Robotics Software Frameworks</a><ul><li><a href="#robot-operating-system-ros" class="table-of-contents__link toc-highlight">Robot Operating System (ROS)</a></li><li><a href="#alternative-frameworks" class="table-of-contents__link toc-highlight">Alternative Frameworks</a></li></ul></li><li><a href="#control-systems-programming" class="table-of-contents__link toc-highlight">Control Systems Programming</a><ul><li><a href="#control-theory-basics" class="table-of-contents__link toc-highlight">Control Theory Basics</a></li><li><a href="#implementation-patterns" class="table-of-contents__link toc-highlight">Implementation Patterns</a></li></ul></li><li><a href="#sensor-data-processing" class="table-of-contents__link toc-highlight">Sensor Data Processing</a><ul><li><a href="#data-acquisition" class="table-of-contents__link toc-highlight">Data Acquisition</a></li><li><a href="#filtering-and-processing" class="table-of-contents__link toc-highlight">Filtering and Processing</a></li></ul></li><li><a href="#computer-vision-in-robotics" class="table-of-contents__link toc-highlight">Computer Vision in Robotics</a><ul><li><a href="#image-processing" class="table-of-contents__link toc-highlight">Image Processing</a></li><li><a href="#vision-based-control" class="table-of-contents__link toc-highlight">Vision-Based Control</a></li></ul></li><li><a href="#path-planning-and-navigation" class="table-of-contents__link toc-highlight">Path Planning and Navigation</a><ul><li><a href="#global-planning" class="table-of-contents__link toc-highlight">Global Planning</a></li><li><a href="#local-planning" class="table-of-contents__link toc-highlight">Local Planning</a></li></ul></li><li><a href="#programming-languages-for-robotics" class="table-of-contents__link toc-highlight">Programming Languages for Robotics</a><ul><li><a href="#c" class="table-of-contents__link toc-highlight">C++</a></li><li><a href="#python" class="table-of-contents__link toc-highlight">Python</a></li><li><a href="#other-languages" class="table-of-contents__link toc-highlight">Other Languages</a></li></ul></li><li><a href="#simulation-and-testing" class="table-of-contents__link toc-highlight">Simulation and Testing</a><ul><li><a href="#simulation-environments" class="table-of-contents__link toc-highlight">Simulation Environments</a></li><li><a href="#testing-strategies" class="table-of-contents__link toc-highlight">Testing Strategies</a></li></ul></li><li><a href="#debugging-robotics-software" class="table-of-contents__link toc-highlight">Debugging Robotics Software</a><ul><li><a href="#common-challenges" class="table-of-contents__link toc-highlight">Common Challenges</a></li><li><a href="#debugging-tools" class="table-of-contents__link toc-highlight">Debugging Tools</a></li></ul></li><li><a href="#performance-optimization" class="table-of-contents__link toc-highlight">Performance Optimization</a><ul><li><a href="#profiling-and-monitoring" class="table-of-contents__link toc-highlight">Profiling and Monitoring</a></li><li><a href="#optimization-techniques" class="table-of-contents__link toc-highlight">Optimization Techniques</a></li></ul></li><li><a href="#deployment-considerations" class="table-of-contents__link toc-highlight">Deployment Considerations</a><ul><li><a href="#cross-compilation" class="table-of-contents__link toc-highlight">Cross-Compilation</a></li><li><a href="#configuration-management" class="table-of-contents__link toc-highlight">Configuration Management</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/hackathon-book/docs/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/hackathon-book/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Physical AI & Humanoid Robotics. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
